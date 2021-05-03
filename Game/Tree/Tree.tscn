@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Game/Tree/Leaves.gd" type="Script" id=1]
+[ext_resource path="res://Game/Tree/Trunk.gd" type="Script" id=2]
+[ext_resource path="res://Game/Tree/Tree.gd" type="Script" id=3]
+
+[node name="Tree" type="Spatial"]
+script = ExtResource( 3 )
+
+[node name="Trunk" type="Spatial" parent="."]
+script = ExtResource( 2 )
+
+[node name="Leaves" type="Spatial" parent="."]
+script = ExtResource( 1 )
